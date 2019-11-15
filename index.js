@@ -1,5 +1,22 @@
-let div = document.getElementsByClassName('div');
-for(let i=1; i<=3; i++){
-    let add = prompt('Write url image');
-    div.style.backgroundImage = `<div>${add}</div>`;
-}
+let color = document.querySelector('div');
+
+
+color.addEventListener('mouseover', function(event){
+    event.target.style.backgroundColor = 'red';
+    console.log(color);
+    
+})
+color.addEventListener('mouseout', function(event){
+    event.target.style.backgroundColor = 'aqua';
+    console.log(color);
+    
+})
+
+color.addEventListener('mouseenter', function(event){
+    event.target.style.backgroundColor = 'yellow';
+    console.log(color);
+})
+
+color.addEventListener('mouseout', function(event){
+    event.target.style.backgroundColor = 'aqua';
+})
